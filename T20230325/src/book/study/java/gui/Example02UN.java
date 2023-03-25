@@ -1,4 +1,4 @@
-package study.java.gui;
+package book.study.java.gui;
 
 import javax.swing.*;
 import java.awt.*;

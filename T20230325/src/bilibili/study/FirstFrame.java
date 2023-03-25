@@ -1,4 +1,4 @@
-package bilibili;
+package bilibili.study;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,7 +10,7 @@ import java.awt.*;
  * Date: 2023-03-25
  * Time: 17:15
  */
-public class TestJavaGUI01 {
+public class FirstFrame {
     public static void main(String[] args) {
         JFrame frame = new JFrame("firstFrame");
         Container pane = frame.getContentPane();
