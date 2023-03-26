@@ -1,4 +1,4 @@
-package bilibili.study;
+package bilibili.study.java.gui;
 
 import javax.swing.*;
 
