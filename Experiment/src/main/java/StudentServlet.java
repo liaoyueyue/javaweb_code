@@ -28,6 +28,7 @@ public class StudentServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // 获取请求参数
+        request.setCharacterEncoding("utf8");
         String name = request.getParameter("name");
         String gender = request.getParameter("gender");
         int age = Integer.parseInt(request.getParameter("age"));
@@ -44,6 +45,7 @@ public class StudentServlet extends HttpServlet {
         List<Student> students = getStudents();
         System.out.println("数据库中学生对象 = " + students);
         request.setAttribute("students", students);// 将查询结果存储到request对象中
+        response.setContentType("text/html; charset=utf8");
         request.getRequestDispatcher("show.jsp").forward(request, response);// 转发到show.jsp页面
 
         // 跳转到显示所有学生信息的页面

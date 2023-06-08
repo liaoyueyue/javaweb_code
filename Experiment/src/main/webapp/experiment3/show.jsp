@@ -6,6 +6,14 @@
 <head>
   <meta charset="UTF-8">
   <title>学生信息</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    table {
+      border-spacing: 0px;
+    }
+  </style>
 </head>
 <body>
 <h1>学生信息</h1>
